@@ -1,0 +1,151 @@
+:root {
+	--heading-color: #8EE4AF;
+	--alternate-color: #379683;
+	--background-color: #002938;
+	--text-color: #EDF5E1;
+}
+
+@font-face {
+	font-family: "Quicksand";
+	src: url("../fonts/Quicksand-Medium.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Quicksand";
+	src: url("../fonts/Quicksand-Bold.ttf");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+	  font-size: 55%;
+	  vertical-align: middle;
+	}
+}
+
+@media (max-width: 768px) {
+	pre {
+	  overflow-x: scroll;
+	  /*margin: 0 -40px;*/
+	  margin: 0 auto;
+	  padding: 0 10px;
+	  max-width: 90%;
+	}
+}
+
+
+html {
+	background-color: var(--background-color);
+}
+
+body {
+	background-color: var(--background-color);
+	color: var(--text-color);
+	padding: 5px;
+	margin: auto;
+	width: 70%;
+	font-family: Quicksand;
+}
+
+header, nav, main, footer {
+	margin: 15px;
+}
+
+h1, h2, h3, h4 {
+	font-family: Quicksand;
+	color: var(--heading-color);
+}
+
+header, nav {
+	text-align: center;
+}
+
+.ascii {
+	color: var(--heading-color);
+	font-weight: bold;
+}
+
+.logo {
+	font: 10px/5px monospace;
+}
+
+nav ul {
+	display: block;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline;
+	padding-left: 10px;
+}
+
+nav ul li {
+	text-decoration: none;
+	color: rgba(255,255,255,1);
+}
+
+nav ul li a:hover {
+	font-weight: bold;
+}
+.link{
+	border-bottom: 3px #5CDB95 solid;
+}
+
+.link:hover{
+	border-bottom: 4px #5CDB95 solid;
+	border-color: var(--text-color);
+}
+
+/* .small-link {
+	color:  !important; 
+	font-weight: 100 !important;
+} */
+
+a {
+	text-decoration: none;
+	color: var(--heading-color);
+	font-weight: bold;
+	font-family: Quicksand;
+}
+
+a:hover {
+	color: var(--text-color);
+	font-weight: bolder;
+}
+
+/* .highlight pre {
+    word-wrap: normal;
+} */
+
+code {
+	color: var(--heading-color);
+	font-family: monospace;
+	font-size: 14px;
+
+}
+
+pre.highlight {
+	border: 1px solid rgba(255,255,255,0.3);
+	padding: 15px;
+	background-color: #0D0D0D;
+	max-width: calc(100vw - {padding on sides});
+    overflow-x: scroll;
+}
+
+
+img, main iframe {
+	width: 80%;
+	margin-left: 0%;
+	border: 0px dashed rgba(255,255,255,0G.5);
+}
+
+main header {
+	text-align: center;
+	padding-bottom: 15px;
+	border: 0;
+}
+
+img[alt=ascii] {width: 50px;}
