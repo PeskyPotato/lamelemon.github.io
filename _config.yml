@@ -12,7 +12,6 @@ fanpage_id: ""
 lang: "en"
 ssl: false # It will redirect to https
 plugins_dir:
-  - jekyll-redirect-from
 
 # Media
 disqus:

@@ -1,3 +1,4 @@
 source 'https://rubygems.org'
-gem 'github-pages', '>= 89', group: :jekyll_plugins
-gem 'jekyll-redirect-from'
+# gem 'github-pages', group: :jekyll_plugins
+# gem 'jekyll-redirect-from'
+# gem "rubyzip", ">= 1.3.0"
