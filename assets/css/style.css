@@ -19,17 +19,9 @@
 	font-style: normal;
 }
 
-@media only screen and (max-width: 600px) {
-	body {
-	  font-size: 55%;
-	  vertical-align: middle;
-	}
-}
 
 @media (max-width: 768px) {
 	pre {
-	  overflow-x: scroll;
-	  /*margin: 0 -40px;*/
 	  margin: 0 auto;
 	  padding: 0 10px;
 	  max-width: 90%;
@@ -131,7 +123,7 @@ pre.highlight {
 	border: 1px solid rgba(255,255,255,0.3);
 	padding: 15px;
 	background-color: #0D0D0D;
-	max-width: calc(100vw - {padding on sides});
+	/* max-width: calc(100vw - {padding on sides}); */
     overflow-x: scroll;
 }
 

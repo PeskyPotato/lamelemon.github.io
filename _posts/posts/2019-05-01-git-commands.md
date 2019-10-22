@@ -53,7 +53,7 @@ git merge feature-branch
 ----
 ## Set the date of the last commit
 Set the date and time of the last commit without editing the messge. 
-```Python
+```
 git commit --amend --no-edit --date "Mon 29 Apr 2019 09:47:53 -0400"
 ```
 From [VonC on StackOverflow](https://stackoverflow.com/questions/23609991/git-github-commit-at-past-date){:class="small-link"}
