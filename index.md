@@ -32,10 +32,6 @@ A software engineer that likes computer networking. I am currently working towar
 GitHub
 </a>
 &nbsp;
-<a href="https://www.linkedin.com/in/garybsantos/" class="link">
-LinkedIn
-    </a>
-&nbsp;
 <a href="https://twitter.com/helep0d" class="link">
 Twitter
 </a>

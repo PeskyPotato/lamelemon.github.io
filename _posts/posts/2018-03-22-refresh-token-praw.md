@@ -6,6 +6,7 @@ link: /posts/refresh-token-praw
 categories: posts
 description: Authenticating your Reddit bot via a refresh token with PRAW
 keywords: "Reddit, bot, API wrapper, username, password, OAuth, PRAW"
+parentPost: true
 authors:
     - PeskyPotato
 ---

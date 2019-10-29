@@ -19,6 +19,12 @@
 	font-style: normal;
 }
 
+@media only screen and (max-width: 600px) {
+	body {
+	  font-size: 80%;
+	  width:100% !important; 
+	}
+}
 
 @media (max-width: 768px) {
 	pre {

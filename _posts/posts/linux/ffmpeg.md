@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Useful git commands
-date: 2019-05-09 13:55:58
-link: /posts/git-commands
+title: ffmpeg
+date: 2019-10-25 13:55:58
+permalink: /posts/linux/:title/
+link: /posts/linux/ffmpeg
 categories: posts
-description: Useful git commands to refer to
-keywords: "git, github, commands, version control, terminal"
-parentPost: true
+description: Useful terminal commands and tools to refer too
+keywords: "linux, bash, tools, commands, terminal"
 authors:
     - PeskyPotato
 ---
