@@ -96,12 +96,6 @@ nav ul li a:hover {
 	border-bottom: 4px #5CDB95 solid;
 	border-color: var(--text-color);
 }
-
-/* .small-link {
-	color:  !important; 
-	font-weight: 100 !important;
-} */
-
 a {
 	text-decoration: none;
 	color: var(--heading-color);
@@ -113,10 +107,6 @@ a:hover {
 	color: var(--text-color);
 	font-weight: bolder;
 }
-
-/* .highlight pre {
-    word-wrap: normal;
-} */
 
 code {
 	color: var(--heading-color);
@@ -144,6 +134,18 @@ main header {
 	text-align: center;
 	padding-bottom: 15px;
 	border: 0;
+}
+
+table { 
+	border-collapse: collapse; 
+}
+
+table td + td { 
+	border-left: 2px solid var(--heading-color);
+}
+
+td {
+    padding:0 15px 0 15px;
 }
 
 img[alt=ascii] {width: 50px;}
