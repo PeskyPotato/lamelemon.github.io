@@ -4,9 +4,10 @@
 <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/assets/img/fav.png">
 <title>
 	{% if page.title %}
-		{{ page.title }} // 
+		{{ page.title }}
+	{% else %}
+		{{ site.title }}
 	{% endif %}
-	{{ site.title }}
 </title>
 
 <!-- Meta tag looking for mobile devices -->
