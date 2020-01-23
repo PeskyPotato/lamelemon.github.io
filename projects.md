@@ -1,5 +1,6 @@
 ---
 layout: default
+title: projects
 ---
 {:id="projects"}
 <ul>
