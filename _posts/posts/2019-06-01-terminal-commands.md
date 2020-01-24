@@ -15,7 +15,8 @@ authors:
 These are commands and tools that I use often but need help remembering. 
 
 ## Contents
-1. [ffmpeg](#ffmpeg)
+- [Introduction](#introduction)
+- [ffmpeg](#ffmpeg)
     - [Concatenate two video files with audio](#concatenate-two-video-files-with-audio)
     - [Convert video to gif](#convert-video-to-gif)
     - [Create webm for 4chan](#create-webm-for-4chan)
@@ -23,7 +24,7 @@ These are commands and tools that I use often but need help remembering.
     - [Reverse video and audio](#reverse-video-and-audio)
     - [Trim video](#trim-video)
     - [Resources](#resources)
-2. [tar](#tar)
+- [tar](#tar)
     - [Create an archive](#create-an-archive)
     - [Create a gzip compressed archive](#create-a-gzip-compressed-archive)
     - [Extract an archive](#extract-an-archive)
