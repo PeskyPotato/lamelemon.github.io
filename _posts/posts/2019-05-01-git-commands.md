@@ -20,6 +20,7 @@ These are a few git commands that I refer to from time to time when I need a rem
 - [Add co-authors to a commit](#add-co-authors-to-a-commit-)
 - [Branching with Git](#branching-with-git)
     - [Checkout a remote branch](#checkout-a-remote-branch)
+    - [Create a branch from another branch](#create-a-branch-from-another-branch)
 - [Change the last commit](#change-the-last-commit)
     - [Set the author](#set-the-author)
     - [Set the date](#set-the-date-)
@@ -66,13 +67,19 @@ If you wish to checkout a branch from a remote do the following where upstream i
 git checkout -b develop upstream/develop
 ```
 
+### Create a branch from another branch
+Below `new-feature` is the name of the branch you want to create and `develop` is the branch you would like to checkout from.
+```
+git checkout -b new-feature develop
+```
+
 [[top]](#introduction)
 
 ---
 ## Change the last commit
 
 ### Set the author
-Set the author username and email without editing the message for the lsat commit.
+Set the author username and email without editing the message for the last commit.
 ```
 git commit --amend --no-edit --author="LameLemon <lame@lemon.com>"
 ```
