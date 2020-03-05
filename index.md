@@ -7,7 +7,7 @@ title: LameLemon
 
 {:id="about"}
 
-A software engineer that likes computer networking. I am currently working towards a CCNA and a Master's degree in Computer Networks and Security. My personal projects tend center around data preservation. 
+A software engineer that likes computer networking. My personal projects tend center around data preservation. 
 
 
 ## /projects
