@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LameLemon - Articles</title>
+    <description>A developer and network administrator</description>
+    <link>
+    https://lamelemon.github.io</link>
+    
+      <item>
+        <title>Useful terminal commands and tools</title>
+        
+          <description>Useful terminal commands and tools to refer too</description>
+        
+        <pubDate>Fri, 25 Oct 2019 14:55:58 +0100</pubDate>
+        <link>/posts/terminal-commands</link>
+        <guid isPermaLink="true">https://lamelemon.github.io/posts/terminal-commands/</guid>
+      </item>
+    
+      <item>
+        <title>Web Scrapers</title>
+        
+          <description>collection of scrapers for various websites</description>
+        
+        <pubDate>Tue, 09 Jul 2019 13:00:00 +0100</pubDate>
+        <link>/projects/scrapers</link>
+        <guid isPermaLink="true">https://lamelemon.github.io/projects/scrapers/</guid>
+      </item>
+    
+      <item>
+        <title>Useful git commands</title>
+        
+          <description>Useful git commands to refer to</description>
+        
+        <pubDate>Thu, 09 May 2019 14:55:58 +0100</pubDate>
+        <link>/posts/git-commands</link>
+        <guid isPermaLink="true">https://lamelemon.github.io/posts/git-commands/</guid>
+      </item>
+    
+      <item>
+        <title>High Altitude Weather Balloon</title>
+        
+          <description>Data logger and communications system for a high altitude balloon</description>
+        
+        <pubDate>Mon, 10 Sep 2018 13:00:00 +0100</pubDate>
+        <link>/projects/hab</link>
+        <guid isPermaLink="true">https://lamelemon.github.io/projects/hab/</guid>
+      </item>
+    
+      <item>
+        <title>Use refresh tokens with PRAW</title>
+        
+          <description>Authenticating your Reddit bot via a refresh token with PRAW</description>
+        
+        <pubDate>Thu, 22 Mar 2018 01:00:00 +0000</pubDate>
+        <link>/posts/refresh-token-praw</link>
+        <guid isPermaLink="true">https://lamelemon.github.io/posts/refresh-token-praw/</guid>
+      </item>
+    
+      <item>
+        <title>Crime Hunter</title>
+        
+          <description>Shoot the enemy before they shoot you! A web game built in JavaScript using Phaser</description>
+        
+        <pubDate>Sun, 21 Jan 2018 12:00:00 +0000</pubDate>
+        <link>/projects/crime-hunter</link>
+        <guid isPermaLink="true">https://lamelemon.github.io/projects/crime-hunter/</guid>
+      </item>
+    
+      <item>
+        <title>GrabIt</title>
+        
+          <description>Archive reddit submissions incrementally including gifs, images, videos and text </description>
+        
+        <pubDate>Wed, 27 Dec 2017 12:00:00 +0000</pubDate>
+        <link>/projects/grabit</link>
+        <guid isPermaLink="true">https://lamelemon.github.io/projects/grabit/</guid>
+      </item>
+    
+  </channel>
+</rss>
