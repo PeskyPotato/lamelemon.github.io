@@ -17,7 +17,7 @@ These are a few git commands that I refer to from time to time when I need a rem
 ---
 ## Contents
 - [Introduction](#introduction)
-- [Add co-authors to a commit](#add-co-authors-to-a-commit-)
+- [Add co-authors to a commit](#add-co-authors-to-a-commit)
 - [Branching with Git](#branching-with-git)
     - [Checkout a remote branch](#checkout-a-remote-branch)
     - [Create a branch from another branch](#create-a-branch-from-another-branch)

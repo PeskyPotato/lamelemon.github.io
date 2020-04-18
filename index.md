@@ -6,9 +6,7 @@ title: LameLemon
 ## /about
 
 {:id="about"}
-
-A software engineer that likes computer networking. I am currently working towards a CCNA and a Master's degree in Computer Networks and Security. My personal projects tend center around data preservation. 
-
+I am a Python developer who occasionally dabbles with PHP. My personal projects tend to centre around data preservation and web scraping.
 
 ## /projects
 {:id="projects"}
