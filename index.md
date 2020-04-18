@@ -6,9 +6,7 @@ title: LameLemon
 ## /about
 
 {:id="about"}
-
-A software engineer that likes computer networking. My personal projects tend center around data preservation. 
-
+I am a Python developer who occasionally dabbles with PHP. My personal projects tend to centre around data preservation and web scraping.
 
 ## /projects
 {:id="projects"}

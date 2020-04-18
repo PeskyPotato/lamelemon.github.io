@@ -1,0 +1,91 @@
+:root {
+  --heading-color: #8EE4AF;
+  --alternate-color: #379683;
+  --background-color: #002938;
+  --text-color: #EDF5E1;
+}
+
+@font-face {
+	font-family: "Quicksand";
+	src: url("../fonts/Quicksand-Medium.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Quicksand";
+	src: url("../fonts/Quicksand-Bold.ttf");
+	font-weight: bold;
+	font-style: normal;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  background-color: var(--background-color);
+}
+
+body, a {   
+  font-family: 'Quicksand', sans-serif;
+  color: var(--text-color);
+}
+
+.container {
+  width: auto;
+  max-width: 980px;
+  padding: 0 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+/* Navigation */
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  padding: .75rem 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  border-bottom: .15rem solid var(--alternate-color);
+  border-top: .15rem solid var(--alternate-color);
+}
+
+.breadcrumb-item + .breadcrumb-item:before {
+  display: inline-block;
+  padding: 0 .5rem;
+  content: "/";
+}
+
+/* Listing */
+ol {
+  margin-top: 0;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: var(--alternate-color);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table td, .table th {
+  padding: .75rem;
+  vertical-align: top;
+  border-bottom: .1rem solid var(--alternate-color);
+}
+
+th {
+  text-align: inherit;
+}
