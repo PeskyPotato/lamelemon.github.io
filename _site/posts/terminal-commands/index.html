@@ -34,7 +34,7 @@
 <meta property="og:title" content="LameLemon" />
 <meta property="og:type" content="website" />
 <meta property="og:description" content="A developer and network administrator" />
-<meta property="og:url" content="https://lamelemon.github.io" />
+<meta property="og:url" content="http://localhost:4000" />
 <meta property="og:image:type" content="image/png" /> <!-- less than 5mB -->
 <meta property="og:image:width" content="600" />
 <meta property="og:image:height" content="315" />
@@ -47,7 +47,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="LameLemon" />
 <meta name="twitter:description" content="A developer and network administrator" />
-<meta name="twitter:url" content="https://lamelemon.github.io" />
+<meta name="twitter:url" content="http://localhost:4000" />
 <meta name="twitter:image" content="" />
 <meta name="twitter:author" content="helep0d" />
 
@@ -104,6 +104,7 @@
   <li><a href="#introduction">Introduction</a></li>
   <li><a href="#ffmpeg">ffmpeg</a>
     <ul>
+      <li><a href="#capture-screen-as-dummy-video">Capture screen as dummy video</a></li>
       <li><a href="#concatenate-two-video-files-with-audio">Concatenate two video files with audio</a></li>
       <li><a href="#convert-video-to-gif">Convert video to gif</a></li>
       <li><a href="#create-webm-for-4chan">Create webm for 4chan</a></li>
@@ -129,6 +130,49 @@
 <hr />
 <h2 id="ffmpeg">ffmpeg</h2>
 
+<h3 id="capture-screen-as-dummy-video">Capture screen as dummy video</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>modprobe v4l2loopback
+sudo ffmpeg -video_size 1920x1080 -framerate 25 -f x11grab -i :0.0+1920,0 -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video2
+</code></pre></div></div>
+
+<p>Loads the v4l2loopback module which creates a new dummy device under <code class="highlighter-rouge">/dev/</code>. You may have to include video filter hflip (i.e. <code class="highlighter-rouge">-vf 'hflip'</code>), before <code class="highlighter-rouge">/dev/video2</code>, if the video output is mirrored.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><!-- --></th>
+      <th style="text-align: left"><!-- --></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">-video_size</td>
+      <td style="text-align: left">Sets the video frame size.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">-f</td>
+      <td style="text-align: left">Forces the input or output file format. Here the X11 video input device and the Video4Linux2 video input device.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">-i</td>
+      <td style="text-align: left">Grabs at position from top left. Here with 1920 offset, to get the second monitor.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">-vcodec</td>
+      <td style="text-align: left">Uses raw video decoder for rawvideo streams.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">-pixfmt</td>
+      <td style="text-align: left">Uses <code class="highlighter-rouge">yuv420p</code> colour encoding system.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Explanation:</p>
+<ul>
+  <li><a href="https://ffmpeg.org/ffmpeg-devices.html#x11grab">x11grab</a></li>
+</ul>
+
 <h3 id="concatenate-two-video-files-with-audio">Concatenate two video files with audio</h3>
 <p>(with the same codec)</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ffmpeg -i cut.mkv -i cut_reversed.mkv -filter_complex "[0:v] [0:a] [1:v] [1:a] concat=n=2:v=1:a=1 [v] [a]" -map "[v]" -map "[a]" combined.mkv
@@ -152,7 +196,7 @@
     </tr>
     <tr>
       <td style="text-align: center">-map</td>
-      <td style="text-align: left">Designate one or more input streams as the srouce for the output file</td>
+      <td style="text-align: left">Designate one or more input streams as the source for the output file</td>
     </tr>
   </tbody>
 </table>
@@ -227,11 +271,11 @@ ffmpeg  -i combined.mkv -i palette.png -filter_complex "fps=24,scale=1080:-1:fla
     </tr>
     <tr>
       <td style="text-align: center">-crf</td>
-      <td style="text-align: left">Cosntant Rate Factor, range from 0-51, lower is better quality</td>
+      <td style="text-align: left">Constant Rate Factor, range from 0-51, lower is better quality</td>
     </tr>
     <tr>
       <td style="text-align: center">-b:v</td>
-      <td style="text-align: left">Set bitrate of video output file</td>
+      <td style="text-align: left">Set bit-rate of video output file</td>
     </tr>
     <tr>
       <td style="text-align: center">-vf</td>
@@ -239,7 +283,7 @@ ffmpeg  -i combined.mkv -i palette.png -filter_complex "fps=24,scale=1080:-1:fla
     </tr>
     <tr>
       <td style="text-align: center">-ac</td>
-      <td style="text-align: left">Set number of audio channels, int his case to 1 so we reduce file size</td>
+      <td style="text-align: left">Set number of audio channels, in this case to 1 so we reduce file size</td>
     </tr>
     <tr>
       <td style="text-align: center">-c:a</td>
@@ -279,7 +323,7 @@ ffmpeg  -i combined.mkv -i palette.png -filter_complex "fps=24,scale=1080:-1:fla
     </tr>
     <tr>
       <td style="text-align: center">-map</td>
-      <td style="text-align: left">Designate one or more input streams as the srouce for the output file</td>
+      <td style="text-align: left">Designate one or more input streams as the source for the output file</td>
     </tr>
   </tbody>
 </table>

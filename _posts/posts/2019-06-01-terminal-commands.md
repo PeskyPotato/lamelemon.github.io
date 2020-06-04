@@ -17,6 +17,7 @@ These are commands and tools that I use often but need help remembering.
 ## Contents
 - [Introduction](#introduction)
 - [ffmpeg](#ffmpeg)
+    - [Capture screen as dummy video](#capture-screen-as-dummy-video)
     - [Concatenate two video files with audio](#concatenate-two-video-files-with-audio)
     - [Convert video to gif](#convert-video-to-gif)
     - [Create webm for 4chan](#create-webm-for-4chan)
@@ -36,6 +37,25 @@ These are commands and tools that I use often but need help remembering.
 ---
 ## ffmpeg
 
+### Capture screen as dummy video
+```
+modprobe v4l2loopback
+sudo ffmpeg -video_size 1920x1080 -framerate 25 -f x11grab -i :0.0+1920,0 -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video2
+```
+
+ Loads the v4l2loopback module which creates a new dummy device under `/dev/`. You may have to include video filter hflip (i.e. `-vf 'hflip'`), before `/dev/video2`, if the video output is mirrored.
+
+| <!-- -->            | <!-- -->                                                                                                        |
+| :-----------------: |:--------------------------------------------------------------------------------------------------------------- |
+| -video_size         | Sets the video frame size.                                                                                      |
+| -f                  | Forces the input or output file format. Here the X11 video input device and the Video4Linux2 video input device.|
+| -i                  | Grabs at position from top left. Here with 1920 offset, to get the second monitor.                              |
+| -vcodec             | Uses raw video decoder for rawvideo streams.                                                                    |
+| -pixfmt             | Uses `yuv420p` colour encoding system.                                                                          |
+
+Explanation:
+- [x11grab](https://ffmpeg.org/ffmpeg-devices.html#x11grab)
+
 ### Concatenate two video files with audio
 (with the same codec)
 ```
@@ -46,7 +66,7 @@ ffmpeg -i cut.mkv -i cut_reversed.mkv -filter_complex "[0:v] [0:a] [1:v] [1:a] c
 | :-----------------: |:----------------------------------------------------------------------------- |
 | -i                  | Specify input filename                                                        |
 | -filter_complex     | Creates a complex filtergraph with inputs and/or outputs                      |
-| -map                | Designate one or more input streams as the srouce for the output file         |
+| -map                | Designate one or more input streams as the source for the output file         |
 
 Explanation:
 - [FFmpeg Concatenate](https://trac.ffmpeg.org/wiki/Concatenate)
@@ -79,10 +99,10 @@ ffmpeg -i your_video.mkv -ss 00:00:10.000 -to 00:00:20.000 -c:v libvpx -crf 4 -b
 | -ss                 | Seek start position                                                                        |
 | -to                 | Seek end position                                                                          |
 | -c:v                | Encode all video streams                                                                   |
-| -crf                | Cosntant Rate Factor, range from 0-51, lower is better quality                             |
-| -b:v                | Set bitrate of video output file                                                           |
+| -crf                | Constant Rate Factor, range from 0-51, lower is better quality                             |
+| -b:v                | Set bit-rate of video output file                                                           |
 | -vf                 | Video filtergraph, used in this case to set width with automatic height according to ratio |
-| -ac                 | Set number of audio channels, int his case to 1 so we reduce file size                     |
+| -ac                 | Set number of audio channels, in this case to 1 so we reduce file size                     |
 | -c:a                | Encode all audio streams                                                                   |
 
 ### Merge audio and video
@@ -97,7 +117,7 @@ ffmpeg -i video.mkv -i audio.mp3 -c:v copy -c:a aac -strict experimental -map 0:
 | -c:v                | Encode all video streams                                                      |
 | -c:a                | Encode all audio streams                                                      |
 | -strict             | Specify how strictly to follow the standards                                  |
-| -map                | Designate one or more input streams as the srouce for the output file         |
+| -map                | Designate one or more input streams as the source for the output file         |
 
 
 ### Reverse video and audio

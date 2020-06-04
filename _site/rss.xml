@@ -4,7 +4,7 @@
     <title>LameLemon - Articles</title>
     <description>A developer and network administrator</description>
     <link>
-    https://lamelemon.github.io</link>
+    http://localhost:4000</link>
     
       <item>
         <title>Useful terminal commands and tools</title>
@@ -13,7 +13,7 @@
         
         <pubDate>Fri, 25 Oct 2019 14:55:58 +0100</pubDate>
         <link>/posts/terminal-commands</link>
-        <guid isPermaLink="true">https://lamelemon.github.io/posts/terminal-commands/</guid>
+        <guid isPermaLink="true">http://localhost:4000/posts/terminal-commands/</guid>
       </item>
     
       <item>
@@ -23,7 +23,7 @@
         
         <pubDate>Tue, 09 Jul 2019 13:00:00 +0100</pubDate>
         <link>/projects/scrapers</link>
-        <guid isPermaLink="true">https://lamelemon.github.io/projects/scrapers/</guid>
+        <guid isPermaLink="true">http://localhost:4000/projects/scrapers/</guid>
       </item>
     
       <item>
@@ -33,7 +33,7 @@
         
         <pubDate>Thu, 09 May 2019 14:55:58 +0100</pubDate>
         <link>/posts/git-commands</link>
-        <guid isPermaLink="true">https://lamelemon.github.io/posts/git-commands/</guid>
+        <guid isPermaLink="true">http://localhost:4000/posts/git-commands/</guid>
       </item>
     
       <item>
@@ -43,7 +43,7 @@
         
         <pubDate>Mon, 10 Sep 2018 13:00:00 +0100</pubDate>
         <link>/projects/hab</link>
-        <guid isPermaLink="true">https://lamelemon.github.io/projects/hab/</guid>
+        <guid isPermaLink="true">http://localhost:4000/projects/hab/</guid>
       </item>
     
       <item>
@@ -53,7 +53,7 @@
         
         <pubDate>Thu, 22 Mar 2018 01:00:00 +0000</pubDate>
         <link>/posts/refresh-token-praw</link>
-        <guid isPermaLink="true">https://lamelemon.github.io/posts/refresh-token-praw/</guid>
+        <guid isPermaLink="true">http://localhost:4000/posts/refresh-token-praw/</guid>
       </item>
     
       <item>
@@ -63,7 +63,7 @@
         
         <pubDate>Sun, 21 Jan 2018 12:00:00 +0000</pubDate>
         <link>/projects/crime-hunter</link>
-        <guid isPermaLink="true">https://lamelemon.github.io/projects/crime-hunter/</guid>
+        <guid isPermaLink="true">http://localhost:4000/projects/crime-hunter/</guid>
       </item>
     
       <item>
@@ -73,7 +73,7 @@
         
         <pubDate>Wed, 27 Dec 2017 12:00:00 +0000</pubDate>
         <link>/projects/grabit</link>
-        <guid isPermaLink="true">https://lamelemon.github.io/projects/grabit/</guid>
+        <guid isPermaLink="true">http://localhost:4000/projects/grabit/</guid>
       </item>
     
   </channel>
