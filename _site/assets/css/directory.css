@@ -89,3 +89,14 @@ table {
 th {
   text-align: inherit;
 }
+
+img.fix {
+  position: fixed;
+  bottom: 0px;
+  left: 80%;
+  max-width: 10rem;
+}
+
+.fix:hover, .fix:active {
+  opacity: 0.2;
+}
