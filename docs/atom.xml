@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>LameLemon</title>
+  <link href="https://lamelemon.github.io/atom.xml" rel="self" />
+  <link href="https://lamelemon.github.io/"/>
+  <updated>2021-04-08T03:46:45+00:00</updated>
+  <id>https://lamelemon.github.io</id>
+  <author>
+    <name>LameLemon</name>
+  </author>
+  
+    <entry>
+      <title>Useful terminal commands and tools</title>
+      <link href="/posts/terminal-commands" />
+      <updated>2019-10-25T13:55:58+00:00</updated>
+      <id>/posts/terminal-commands</id>
+      <content type="html">Useful terminal commands and tools to refer too</content>
+    </entry>
+  
+    <entry>
+      <title>Web Scrapers</title>
+      <link href="/projects/scrapers" />
+      <updated>2019-07-09T12:00:00+00:00</updated>
+      <id>/projects/scrapers</id>
+      <content type="html">collection of scrapers for various websites</content>
+    </entry>
+  
+    <entry>
+      <title>Useful git commands</title>
+      <link href="/posts/git-commands" />
+      <updated>2019-05-09T13:55:58+00:00</updated>
+      <id>/posts/git-commands</id>
+      <content type="html">Useful git commands to refer to</content>
+    </entry>
+  
+    <entry>
+      <title>High Altitude Weather Balloon</title>
+      <link href="/projects/hab" />
+      <updated>2018-09-10T12:00:00+00:00</updated>
+      <id>/projects/hab</id>
+      <content type="html">Data logger and communications system for a high altitude balloon</content>
+    </entry>
+  
+    <entry>
+      <title>Use refresh tokens with PRAW</title>
+      <link href="/posts/refresh-token-praw" />
+      <updated>2018-03-22T01:00:00+00:00</updated>
+      <id>/posts/refresh-token-praw</id>
+      <content type="html">Authenticating your Reddit bot via a refresh token with PRAW</content>
+    </entry>
+  
+    <entry>
+      <title>Crime Hunter</title>
+      <link href="/projects/crime-hunter" />
+      <updated>2018-01-21T12:00:00+00:00</updated>
+      <id>/projects/crime-hunter</id>
+      <content type="html">Shoot the enemy before they shoot you! A web game built in JavaScript using Phaser</content>
+    </entry>
+  
+    <entry>
+      <title>GrabIt</title>
+      <link href="/projects/grabit" />
+      <updated>2017-12-27T12:00:00+00:00</updated>
+      <id>/projects/grabit</id>
+      <content type="html">Archive reddit submissions incrementally including gifs, images, videos and text </content>
+    </entry>
+  
+</feed>
