@@ -6,7 +6,7 @@ title: LameLemon
 ## /about
 
 {:id="about"}
-I am a Python developer who occasionally dabbles with PHP. My personal projects tend to centre around data preservation and web scraping.
+I don't do a lot of software development and I don't do a lot of system or network administration, but I do do a lot of everything. I may or may not update my posts on here but I do keep a steady feed of interesting information, nuggets of knowledge if you will, on [TIL](https://til.helep0d.xyz/). 
 
 ## /projects
 {:id="projects"}
